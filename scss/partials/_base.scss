@@ -1,0 +1,25 @@
+
+html {
+  font-size: 10px;
+}
+
+body {
+  color: $color-text-dark;
+  font-size: 10px;
+  font-family: 'Proxima';
+  scroll-behavior: smooth;
+
+}
+.display-none {
+  display:none;
+}
+.container {
+  width: 80%;
+  max-width: $width-max;
+  margin: 0 auto;
+  position: relative;
+  z-index: 4;
+  @include mobile(){
+      width: 90%;
+  }
+}

@@ -1,0 +1,134 @@
+.menu-subpage {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    z-index: 999999;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    // padding: 10px;
+    width: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+
+
+    @include mobile(){
+        width:110% !important;
+        left: -30px;
+        padding-left:30px; 
+    }
+
+    a {
+        color: $color-primary !important;
+
+        &:hover {
+            color: $color-secondary !important;
+        }
+    }
+
+    &__over {
+        background: white;
+        position: relative;
+        padding: 10px;
+        height: 54px;
+        z-index: 999999;
+        @include mobile() {
+            &--mobile {
+                height: 90px;
+                &:before {
+                    height: 90px !important;
+                }
+            }
+
+        }
+        @include mobile(){
+            left:-20px;
+            padding-left:20px;
+        }
+    }
+    @include mobile() {
+        &--mobile {
+      
+            &:before {
+                height: 90px !important;
+            }
+        }
+
+    }
+    &:before {
+        content: "";
+        background: white;
+        position: absolute;
+        bottom: 0;
+        left: -300%;
+        height: 54px;
+        width: 300%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        z-index: 0;
+
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        white-space: nowrap;
+    }
+
+    &__main-title {
+        color: $color-primary;
+        font-size: 2.3rem;
+        font-family: "Oswald", sans-serif;
+        font-weight: 500;
+        margin-right: 3vh;
+
+        &--small {
+            font-size: 2rem;
+            font-weight: 300;
+        }
+
+        &--search--small {
+            font-size: 4rem;
+        }
+
+        &--search--main {
+            font-size: 6rem;
+        }
+
+        &--max--width {
+            width: 400px;
+        }
+        &--line-height {
+                line-height:5rem; 
+              }
+
+
+    }
+
+    &__break {
+        @include mobile() {
+            display: block;
+        }
+
+    }
+
+    &__main-title--bold {
+        font-weight: 500;
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            color: $color-primary;
+            font-size: 1.5rem;
+            font-family: "Oswald", sans-serif;
+            font-weight: 300;
+            padding: 10px;
+            text-transform: uppercase;
+        }
+    }
+}

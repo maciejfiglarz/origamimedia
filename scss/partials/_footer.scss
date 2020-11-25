@@ -1,0 +1,107 @@
+.footer {
+  color: $color-text-bright;
+  margin-bottom: 3vh;
+
+  a {
+      color: $color-text-dark;
+  }
+
+  &__copyrights {
+      text-align: center;
+      padding: 10px;
+      font-size: 1.3rem;
+      padding-top:20px;
+  }
+  &__container {
+      border-top: 1px solid $color-border-bright;
+  }
+
+  &__support {
+      text-align: center;
+  }
+
+  &__wrap-columns {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 70px 0 20px 0;
+      @include mobile() {
+        padding: 4vh 0;
+     }
+  }
+
+  &__column--info {
+      text-align: center;
+      width: 38% !important;
+      padding-top: 4vh;
+      @include mobile() {
+        width: 100% !important;
+     }
+  }
+
+  &__column {
+      width: 29%;
+      @include mobile() {
+        width:100%;
+     }
+      &-title {
+          font-size: 2rem;
+          border-bottom: 1px solid $color-border-bright;
+          color: $color-text-dark;
+          padding-bottom: 10px;
+          margin-bottom: 20px;
+          margin-top:20px;
+          font-family: 'Oswald', sans-serif;
+      }
+
+      &-link {
+          padding: 8px 0;
+
+          &:hover {
+              a {
+                  transform: translateX(5px);
+                  -webkit-transform: translateX(5px);
+                  -moz-transform: translateX(5px);
+                  -o-transform: translateX(5px);
+                  transition-duration: 0.5s;
+                  transition-delay: 0, 5s;
+                  color: $color-secondary;
+              }
+          }
+
+          a {
+              display: inline-block;
+              font-size: 1.5rem;
+              color: $color-text-bright;
+          }
+      }
+
+      &-companyinfo {
+          font-size: 1.5rem;
+          padding: 3px;
+      }
+
+      &-companyinfo--bold {
+          font-weight: bold;
+          margin-top: 15px;
+      }
+
+      &-payments {
+          margin-top: 50px;
+          position: relative;
+      }
+
+      &-payments::before {
+          content: "";
+          position: absolute;
+          top: -25px;
+          left: 50%;
+          width: 210px;
+          height: 1px;
+          transform: translateX(-50%);
+          background: $color-border-bright;
+
+      }
+  }
+
+}

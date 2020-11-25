@@ -1,0 +1,144 @@
+
+
+.menu {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    margin: 30px 0;
+
+    @include mobile() {
+        display: none;
+    }
+
+    a {
+        color: white;
+        &:hover {
+            color: white;
+        }
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        color: white;
+        font-size: 1.8rem;
+        border-bottom: 1px solid transparent;
+        margin: 10px 0 10px 35px;
+        padding-bottom: 5px;
+        font-family: "Oswald", sans-serif;
+        font-weight: 300;
+
+        &:hover {
+            border-bottom: 1px solid white;
+        }
+
+        &--active {
+            border-bottom: 1px solid white;
+        }
+    }
+}
+
+.menu-responsive {
+    position: absolute;
+    z-index: 99999;
+    ;
+    width: 100%;
+    margin: 30px 0;
+    display: none;
+
+    @include mobile() {
+        display: block;
+    }
+
+    a {
+        color: white;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        outline: 1px solid
+    }
+
+    &__item {
+        color: #f9f4f4;
+        font-size: 2.2rem;
+        border-bottom: 1px solid transparent;
+        margin: 10px 0 10px 35px;
+        padding-bottom: 5px;
+        font-family: "Oswald", sans-serif;
+        font-weight: 300;
+
+        &-hover {
+            color: white;
+        }
+
+    }
+
+    &__bar {
+        &-inner {
+            background: $color-primary;
+            padding: 10px;
+            color: white;
+            font-size: 2rem;
+        }
+    }
+
+    &__frame {
+        width: 100%;
+        height: 100%;
+        min-height: 100%;
+        height: auto;
+        z-index: 99999;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: $color-primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: none;
+        transition-delay: 2s;
+
+        a {
+            color: #f9f4f4;
+            border: 0;
+
+            &-hover {
+                color: white;
+            }
+        }
+
+        &--active {
+            display: flex;
+        }
+
+
+
+        &-close {
+            font-size: 2.2rem;
+            color: #f9f4f4;
+            position: absolute;
+            top: 30px;
+            right: 30px;
+
+            &-hover {
+                color: white;
+            }
+        }
+    }
+}
