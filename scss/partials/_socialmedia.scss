@@ -1,0 +1,54 @@
+.socialmedia {
+  &-header {
+    position: relative;
+    background: #ff6450;
+    background-image: linear-gradient(135deg, #ff6450 0%, #fe9124 100%);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 70px 70px 50px;
+    background-attachment: fixed;
+    min-height: 280px;
+
+    &__title {
+      margin: 40px 0 0;
+      padding: 0;
+      text-indent: -3px;
+      font-weight: 700;
+      font-size: 64px;
+      color: #fff;
+      cursor: default;
+    }
+  }
+
+  &-cards {
+    display: flex;
+    margin-top:50px;
+    &__item {
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 1px 20px rgba(0, 0, 0, 0.25);
+      transition: box-shadow 0.3s, transform 1.3s;
+      width: calc (33.3% -15px/2);
+      position:relative;
+      margin:15px;
+      top:0;
+      &:hover {
+        top: -20px;
+        box-shadow: 0;
+      }
+      &-title {
+        font-size: 1.8em;
+        font-weight: 500;
+        padding: 15px;
+        text-decoration: none;
+        // color: #1fa3ff;
+      }
+    }
+  }
+}

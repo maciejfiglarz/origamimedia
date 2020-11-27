@@ -1,31 +1,373 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Poland Agains Lies" />
-    <title>PolandAgainstLies.com</title>
+    <title>OrigamiMedia.pl</title>
     <link rel="stylesheet" type="text/css" href="./build/main.css" />
+    <link
+      crossorigin="anonymous"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="header">
-      <div class="header__container">
-        <div class="container header__logo"><img src="images/logo.png" /></div>
-        <div class="header__menu"></div>
+      <div class="container header__container">
+        <div class="header__logo">
+          <div>
+            <img src="images/logo.png" />
+          </div>
+          <div class="header__logo-text">origamimedia</div>
+        </div>
+
+        <div class="header__menu">
+          <a class="header__menu-link" href="">Co robimy?</a>
+          <a class="header__menu-link" href="">Projekty?</a>
+          <a class="header__menu-button" href="">Wycena</a>
+        </div>
       </div>
     </header>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <section class="application">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+      <div class="application-header">
+        <div class="container">
+        <h2 class="application-header__title">Aplikacje</h2>
+      </div>
+      <svg class="topLeftRounded" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="50 20 50 80" preserveAspectRatio="none">
+        <path d="M0,100 C15,100 35,50 50,50 L50,50 C65,50 85,100 100,100 Z"></path>
+      </svg>
+  
+      </div>
+      <div class="container">
+        <div class="application-cards">
+          
+          <div class="application-cards__item">
+            <img src="./images/application/komentatory_cover.png"/>
+          <h3 class="application-cards__item-title">
+            Komentatory
+          </h3>
+          <p class="application-cards__item-description">Portal społecznościowy zrzeszający miłośników memów i grafik tworzonych na wzór znanego serwisu Demotywatory.pl</p>
+        </div>
+  
+        <div class="application-cards__item">
+          <img src="./images/application/sostravel_cover.png"/>
+        <h3 class="application-cards__item-title">
+          Sostravel
+        </h3>
+        <p class="application-cards__item-description">Rozbudowana aplikacja biura podróży pozwalająca na kompleksową obsługę klienta.</p>
+      </div>
+  
+        </div>
+      </div>
+  
+  
+  </section>
+  
+
+<!-- <section class="socialmedia">
+
+    <div class="socialmedia-header">
+      <div class="container">
+      <h2 class="socialmedia-header__title">Social Media</h2>
+    </div>
+    <svg class="topLeftRounded" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="50 20 50 80" preserveAspectRatio="none">
+      <path d="M0,100 C15,100 35,50 50,50 L50,50 C65,50 85,100 100,100 Z"></path>
+    </svg>
+
+    </div>
+    <div class="container">
+      <div class="socialmedia-cards">
+        
+        <div class="socialmedia-cards__item">
+          <img src="./images/socialmedia/komentatory_cover.png"/>
+        <h3 class="socialmedia-cards__item-title">
+          Komentatory
+        </h3>
+      </div>
+
+      <div class="socialmedia-cards__item">
+        <img src="./images/bp.jpg"/>
+      <h3 class="socialmedia-cards__item-title">
+        Bohaterska Polska
+      </h3>
+    </div>
+
+      </div>
+    </div>
+
+
+</section> -->
+
+
+
+    <main class="container index">
+      <section class="index-info">
+        <div class="index-info__content">
+          <h1 class="index-info__content-title">
+            Dzięki nam będziesz <span>widoczny</span> w internecie.
+          </h1>
+          <p class="index-info__content-subtitle">
+            Tworzymy i dostarczamy nieszablonowe rozwiązania. Każdego klienta traktujemy indywidualnie.
+          </p>
+          <div class="index-info__content-link">
+            <a href="" class="btn-primary"> Zobacz nasze projekty </a>
+          </div>
+        </div>
+
+        <div class="index-info__graphic">
+          <img src="images/main-graphic.svg" />
+        </div>
+      </section>
+      <section class="index-services">
+        <h1 class="index-services__title">Czym się zajmujemy?</h1>
+        <p class="index-services__description">
+          Nasze produkty dopasowane są do branży oraz wymagań rynku zwiększają funkcjonalność i konkurencyjność firmy.
+        </p>
+
+        <div class="index-preview">
+          <div class="index-preview__menu">
+            <div
+              data-type="shop"
+              class="index-preview__menu-item index-preview__menu-item--active"
+            >
+              <div class="index-preview__menu-icon">
+                <i class="fas fa-shopping-basket"></i>
+              </div>
+              <div class="index-preview__menu-title">Sklepy internetowe</div>
+            </div>
+
+            <div data-type="app" class="index-preview__menu-item">
+              <div class="index-preview__menu-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <div data-type="code" class="index-preview__menu-title">
+                Aplikacje
+              </div>
+            </div>
+
+            <div data-type="www" class="index-preview__menu-item">
+              <div class="index-preview__menu-icon">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <div data-type="www" class="index-preview__menu-title">
+                Strony internetowe
+              </div>
+            </div>
+
+            <div data-type="socialmedia" class="index-preview__menu-item">
+              <div class="index-preview__menu-icon">
+                <i class="fas fa-user-friends"></i>
+              </div>
+              <div data-type="socialmedia" class="index-preview__menu-title">
+                Social media
+              </div>
+            </div>
+            <div data-type="socialmedia" class="index-preview__menu-item">
+              <div class="index-preview__menu-icon">
+                <i class="fas fa-user-friends"></i>
+              </div>
+              <div data-type="socialmedia" class="index-preview__menu-title">
+                Indentyfikacja wizualna
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="index-preview__content">
+            <div data-type="shop" class="index-preview__content-item">
+              <h4 class="index-preview__content-title">Sklepy internetowe</h4>
+              <p class="index-preview__content-description">
+                Tworzymy sklepy internetowe, systemy e-commerce B2B i B2C, dopasowane do potrzeb małych i dużych przedsiębiorstw. <br><br>Precyzyjnie dopasowujemy rozwiązania do potrzeb klienta sprawiącaj, że produkt dla klienta wyrażnie wyróżnia się wśród konkurencji.
+              </p>
+              <div class="btn-primary--center">
+                <a href="" class="btn-primary btn-primary--small"
+                  >Zobacz więcej</a
+                >
+              </div>
+            </div>
+
+            <div
+              data-type="app"
+              class="index-preview__content-item display-none"
+            >
+              <h4 class="index-preview__content-title">Aplikacje</h4>
+              <p class="index-preview__content-description">
+                Często zdarza się, że obecne na rynku rozwiązania nie spełniają oczekiwań klienta. Bardzo dobrze czujemy się w realizacji dedykowanych rozwiązań wykorzystując przy tym najnowsze technologie 
+              </p>
+              <div class="btn-primary--center">
+                <a href="" class="btn-primary btn-primary--small"
+                  >Zobacz więcej</a
+                >
+              </div>
+            </div>
+
+            <div
+              data-type="www"
+              class="index-preview__content-item display-none"
+            >
+              <h4 class="index-preview__content-title">Strony internetowe</h4>
+              <p class="index-preview__content-description">
+             Strona internetowa to najlepszy sposób, aby zaprezentować się w internecie. Przy projektowaniu i wdrażaniu projektu sięgamy po najnowsze trendy i nowinki, aby strony naszych klientów robiły wrażanie i zapadały w pamięć odwiedzającym.
+              </p>
+              <div class="btn-primary--center">
+                <a href="" class="btn-primary btn-primary--small"
+                  >Zobacz więcej</a
+                >
+              </div>
+            </div>
+
+            <div
+              data-type="socialmedia"
+              class="index-preview__content-item display-none"
+            >
+              <h4 class="index-preview__content-title">Social Media</h4>
+              <p class="index-preview__content-description">
+  W dzisiejszych czasach ciężko wyobrazić sobie funkcjonowanie biznesu bez mediów społecznościowych. Nasze długie doświadczenie owocuje umietnościami, które pozwalają na zdobycie i utrzymanie sympatii klientóœ. W swoich działaniach jesteśmy konsekwentni i innowacyjni. 
+              </p>
+              <div class="btn-primary--center">
+                <a href="" class="btn-primary btn-primary--small"
+                  >Zobacz więcej</a
+                >
+              </div>
+            </div>
+
+
+            <div
+              data-type="socialmedia"
+              class="index-preview__content-item display-none"
+            >
+              <h4 class="index-preview__content-title">Identyfikacja wizualna</h4>
+              <p class="index-preview__content-description">
+               Pierwsze wrażanie często decyduje, czy klient zostanie na danej stronie lub kupi dany produkt. Naszym zadaniem jest wizualizacja marki, która będzie przyciągała klientów, a także trwale zapadnie im w pamięć.
+              </p>
+              <div class="btn-primary--center">
+                <a href="" class="btn-primary btn-primary--small"
+                  >Zobacz więcej</a
+                >
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="tools">
+      <svg
+        class="bottomRightRounded"
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.1"
+        width="100%"
+        height="100"
+        viewBox="0 20 50 80"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M0,101 C15,100 35,50 50,50 L50,50 C65,50 85,100 100,100 Z"
+        ></path>
+      </svg>
+
+      <div class="container">
+        <div class="tools-head">
+          <h2 class="tools-head__title">
+           Dlaczego my?
+          </h2>
+          <p class="tools-head__description">
+            <h2 class="">
+              Jesteśmy małym, doświadczonym zespołem ludzi, którzy lubią to co robią. Do każdego klienta podchodzimy indywidualnie z ogromną dozą życzliwości i profesjonalizmu. 
+            </h2>
+           
+          </p>
+        </div>
+
+        <div class="tools-content">
+          <div class="tools-content__image">
+            <img src="./images/video.png"/>
+          </div>
+          <div class="tools-content__text">
+            <h2 class="tools-content__text-title">Gwarancja jakości</h2>
+            <p class="tools-content__text-description">Każdy projekt realizujemy w sposób, w który sami chcielibyśmy, aby ktoś zrealizował dla nas. Od samego początku dbamy o jakoś wykonania i zachowanie dobrych praktyk. Projekty tworzymy z myślą o długotrwałej współpracy. Nie zrzucamy zadań na stażystów, a także nie zlecamy niczego na zewnątrz.</p>
+          </p>
+          </div>
+        </div>
+      </div>
+
+        <div class="tools-content tools-content--reverse">
+          <div class="tools-content__image">
+            <img src="./images/video.png"/>
+          </div>
+          <div class="tools-content__text">
+            <h2 class="tools-content__text-title">Terminowość</h2>
+            <p class="tools-content__text-description">Nie podejmujemy się zleceń, których nie jesteśmy w stanie zrealizować w terminie. Kiedy zbliża się termin zakończenia prac, a z jakiś powodów mamy opóźnienie cały zespół angażuje się w realizację zlecenia. Nie obce nam są również nadgodziny, a także praca w weekendy.</p>
+          </p>
+          </div>
+        </div>
+
+        <div class="tools-content">
+          <div class="tools-content__image">
+            <img src="./images/video.png"/>
+          </div>
+          <div class="tools-content__text">
+            <h2 class="tools-content__text-title">Indywidualne podejście</h2>
+            <p class="tools-content__text-description">Wydaje nam się, że jesteśmy po prostu pozytywnymi ludźmi.</p>
+          </p>
+          </div>
+        </div>
+      </div>
+ 
+      <svg
+        class="topLeftRounded"
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.1"
+        width="100%"
+        height="100"
+        viewBox="50 20 50 80"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M0,103 C15,100 35,50 50,50 L50,50 C65,50 85,100 100,100 Z"
+        ></path>
+      </svg>
+    </section>
+
+    <br /><br /><br />
+
+    <section class="question">
+      <svg class="bottomRightRounded" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 20 50 80" preserveAspectRatio="none">
+        <path d="M0,101 C15,100 35,50 50,50 L50,50 C65,50 85,100 100,100 Z"></path>
+    </svg>
+      <div class="container">
+<h1 class="question-title">
+  Have Questions?<br>
+  We have answers.
+</h1>
+<p class="question-description">Visit the AddThis Academy to learn tips & tricks from the pros to help drive traffic</p>
+<div class="btn-primary--center">
+  <a href="" class="btn-primary btn-primary--small"
+    >Zobacz więcej</a
+  >
+</div>
+      </div>
+      <svg class="topLeftRounded" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="50 20 50 80" preserveAspectRatio="none">
+        <path d="M0,103 C15,100 35,50 50,50 L50,50 C65,50 85,100 100,100 Z"></path>
+    </svg>
+    </section>
+    <section class="footer">
+      <div class="container">
+
+
+      </div>
+    </section>
+    
     <script src="./build/out.js"></script>
   </body>
 </html>

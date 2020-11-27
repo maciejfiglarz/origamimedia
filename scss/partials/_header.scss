@@ -1,7 +1,69 @@
 .header {
-   width:100%;
-   height:65px;
-   &__container {
-       
-   }
+  width: 100%;
+  height: 65px;
+  padding: 10px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    &-text {
+      font-size: 24px;
+      line-height: 22px;
+      font-weight: bold;
+      color:white;
+    }
+    img {
+      max-width: 45px;
+    }
+  }
+  &__menu {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    &-link {
+      position: relative;
+      display: inline-block;
+      margin: 0 10px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -15px;
+        left: -2px;
+        right: -2px;
+        width: 50px;
+        height: 2px;
+        background: $color-link;
+        transform: scaleX(0);
+        transition: 0.2s;
+        outline: 1px solid red;
+      }
+    }
+    &-button {
+      display: inline-block;
+      background: none;
+      border: 2px solid $color-link;
+      border-radius: 32px;
+      padding: 0.35em 1.5em;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+      color: $color-link;
+      cursor: pointer;
+      transition: 0.2s;
+      &:hover {
+        background: $color-link;
+        color: white;
+      }
+    }
+  }
 }

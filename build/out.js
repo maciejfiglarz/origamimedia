@@ -94,7 +94,19 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n__webpack_require__(/*! ./scss/style.scss */ \"./scss/style.scss\");\n\nwindow.addEventListener(\"DOMContentLoaded\", function (event) {\n  console.log(\"test\");\n});\n\n//# sourceURL=webpack:///./app.js?");
+eval("\n\nvar _services = __webpack_require__(/*! ./js/services */ \"./js/services.js\");\n\n__webpack_require__(/*! ./scss/style.scss */ \"./scss/style.scss\");\n\n\nwindow.addEventListener(\"DOMContentLoaded\", function (event) {\n  console.log(\"test\");\n  (0, _services.menageServices)();\n});\n\n//# sourceURL=webpack:///./app.js?");
+
+/***/ }),
+
+/***/ "./js/services.js":
+/*!************************!*\
+  !*** ./js/services.js ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nvar menageServices = exports.menageServices = function menageServices() {\n  var servicesMenu = document.querySelectorAll(\".index-preview__menu-item\");\n  servicesMenu.forEach(function (item) {\n    item.addEventListener(\"click\", function (event) {\n      clearActiveItems();\n      var currentItem = event.currentTarget;\n      var type = currentItem.dataset.type;\n      currentItem.classList.add(\"index-preview__menu-item--active\");\n      clearActiveContents();\n      document.querySelector(`[data-type='${type}'].index-preview__content-item`).classList.remove(\"display-none\");\n      console.log(`data[type='${type}'].index-preview__content-item`);\n    });\n  });\n};\n\nvar clearActiveItems = function clearActiveItems() {\n  var servicesMenu = document.querySelectorAll(\".index-preview__menu-item\");\n  servicesMenu.forEach(function (item) {\n    item.classList.remove(\"index-preview__menu-item--active\");\n  });\n};\n\nvar clearActiveContents = function clearActiveContents() {\n  var servicesMenu = document.querySelectorAll(\".index-preview__content-item\");\n  servicesMenu.forEach(function (item) {\n    item.classList.add(\"display-none\");\n  });\n};\n\n//# sourceURL=webpack:///./js/services.js?");
 
 /***/ }),
 
